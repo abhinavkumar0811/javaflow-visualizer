@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://javaflow.vercel.app/</loc>
-    <lastmod>2026-09-05</lastmod>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://javaflow.vercel.app/logo_l_seo.png</image:loc>
+      <image:title>JavaFlow — Java Memory &amp; DSA Visualizer</image:title>
+      <image:caption>JavaFlow interactive Java memory management and DSA algorithm visualizer interface</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://javaflow.vercel.app/screenshot.png</image:loc>
+      <image:title>JavaFlow Application Screenshot</image:title>
+      <image:caption>JavaFlow showing JVM Call Stack, Heap, and Method Area visualization during Java code execution</image:caption>
+    </image:image>
   </url>
 </urlset>

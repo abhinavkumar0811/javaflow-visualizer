@@ -16,14 +16,14 @@
     connect-src 'self' http://localhost:4000 http://localhost:80 https://ja-f080c07d4b5940e08a435fb60c7dcf1e.ecs.us-east-1.on.aws https://cdn.jsdelivr.net;
     frame-src 'self' blob:;
   ">
-  <title>JavaFlow | Java Memory Management & DSA Visualizer</title>
-  <meta name="description" content="Interactive step-by-step Java execution engine and dynamic Data Structures and Algorithms (DSA) visualizer. Learn memory management, time complexity, and dry run your code with AI." />
-  <meta name="keywords" content="java, memory management, time complexity, dsa, visualizer, dry run, javaflow, algorithm visualizer, jvm, programming, learning java, step-by-step execution, ai code analysis" />
+  <title>JavaFlow — Free Java Memory Visualizer & DSA Algorithm Visualizer Online</title>
+  <meta name="description" content="JavaFlow is a free, open-source Java memory management visualizer and DSA algorithm visualizer. Trace JVM execution step-by-step, visualize Call Stack, Heap, and Object References, analyze time complexity, and dry run your Java code with AI — all in your browser." />
+  <meta name="keywords" content="JavaFlow, javaflow, java visualizer, java memory visualizer, dsa visualizer, algorithm visualizer, jvm visualizer, java execution engine, call stack visualizer, heap memory, time complexity analyzer, dry run java code, step-by-step java execution, ai code analysis, learn java online, data structures visualizer, open source java tool" />
   <meta name="author" content="Avinash Mourya & Abhinav Chaubey" />
   <meta name="robots" content="index, follow" />
   
-  <meta property="og:title" content="JavaFlow | Java Memory Management & DSA Visualizer" />
-  <meta property="og:description" content="Interactive step-by-step Java execution engine and dynamic Data Structures and Algorithms (DSA) visualizer. Learn memory management, time complexity, and dry run your code with AI." />
+  <meta property="og:title" content="JavaFlow — Free Java Memory Visualizer & DSA Algorithm Visualizer" />
+  <meta property="og:description" content="JavaFlow is a free, open-source Java memory management visualizer and DSA algorithm visualizer. Trace JVM execution step-by-step, visualize Call Stack, Heap, and Object References, analyze time complexity, and dry run your Java code with AI." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://javaflow.vercel.app/" />
   <meta property="og:image" content="https://javaflow.vercel.app/logo_l_seo.png" />
@@ -31,36 +31,118 @@
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="JavaFlow — Interactive Java Memory & DSA Visualizer" />
   <meta property="og:site_name" content="JavaFlow" />
+  <meta property="og:locale" content="en_US" />
   
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="JavaFlow | Java Memory Management & DSA Visualizer" />
-  <meta name="twitter:description" content="Interactive step-by-step Java execution engine and dynamic Data Structures and Algorithms (DSA) visualizer. Learn memory management, time complexity, and dry run your code with AI." />
+  <meta name="twitter:title" content="JavaFlow — Free Java Memory Visualizer & DSA Algorithm Visualizer" />
+  <meta name="twitter:description" content="JavaFlow is a free, open-source Java memory management visualizer and DSA algorithm visualizer. Trace JVM execution step-by-step and dry run your code with AI." />
   <meta name="twitter:image" content="https://javaflow.vercel.app/logo_l_seo.png" />
+  <meta name="twitter:image:alt" content="JavaFlow — Interactive Java Memory & DSA Visualizer" />
   
   <link rel="canonical" href="https://javaflow.vercel.app/" />
   <link rel="icon" type="image/png" href="/favicon.png" />
   <link rel="apple-touch-icon" href="/logo.png" />
+  <link rel="manifest" href="/manifest.json" />
   <meta name="theme-color" content="#111317" />
+  <meta name="application-name" content="JavaFlow" />
+  <meta name="apple-mobile-web-app-title" content="JavaFlow" />
+  <meta name="mobile-web-app-capable" content="yes" />
+
+  <!-- Performance: Preconnect to critical third-party origins (improves Core Web Vitals / LCP) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdn.tailwindcss.com" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="dns-prefetch" href="https://ja-f080c07d4b5940e08a435fb60c7dcf1e.ecs.us-east-1.on.aws" />
   
+  <!-- Schema.org: WebSite with SearchAction (enables sitelinks search box) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "JavaFlow",
+    "alternateName": ["JavaFlow Visualizer", "JavaFlow DSA Visualizer", "JavaFlow Memory Visualizer"],
+    "url": "https://javaflow.vercel.app/"
+  }
+  </script>
+
+  <!-- Schema.org: SoftwareApplication (rich result for app info) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "JavaFlow",
+    "alternateName": "JavaFlow Visualizer",
     "applicationCategory": "EducationalApplication",
+    "applicationSubCategory": "Programming Tool",
     "operatingSystem": "Web",
     "offers": {
       "@type": "Offer",
       "price": "0",
       "priceCurrency": "USD"
     },
-    "description": "Interactive step-by-step Java execution engine and dynamic Data Structures and Algorithms (DSA) visualizer. Learn memory management, time complexity, and dry run your code with AI.",
-    "author": {
-      "@type": "Person",
-      "name": "Avinash Mourya & Abhinav Chaubey"
-    },
-    "url": "https://javaflow.vercel.app/"
+    "description": "JavaFlow is a free, open-source interactive Java memory management visualizer and DSA algorithm visualizer. Trace JVM execution step-by-step, visualize Call Stack, Heap, and Object References, analyze time complexity, and dry run your Java code with AI.",
+    "author": [
+      { "@type": "Person", "name": "Avinash Mourya" },
+      { "@type": "Person", "name": "Abhinav Chaubey" }
+    ],
+    "url": "https://javaflow.vercel.app/",
+    "screenshot": "https://javaflow.vercel.app/logo_l_seo.png",
+    "softwareVersion": "1.0.0",
+    "isAccessibleForFree": true,
+    "license": "https://opensource.org/licenses/MIT"
+  }
+  </script>
+
+  <!-- Schema.org: FAQPage (enables rich FAQ snippets in search results) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is JavaFlow?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "JavaFlow is a free, open-source interactive Java memory management visualizer and DSA algorithm visualizer. It attaches to a running JVM using the Java Debug Interface (JDI) to trace bytecode execution step-by-step, showing how Call Stack, Heap Memory, and Object References evolve during execution."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does JavaFlow visualize Java memory?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "JavaFlow traces your Java code execution in real-time and displays an interactive visualization of the JVM architecture including the Method Area, Heap, Call Stack, Threads, and PC Register. You can step through your code frame-by-frame to see exactly how memory is allocated and freed."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is JavaFlow free to use?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes! JavaFlow is 100% free and open-source under the MIT License. You can use it online at javaflow.vercel.app or contribute to the project on GitHub."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can JavaFlow analyze time complexity?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. JavaFlow includes a built-in time complexity analyzer that measures operations, stack depth, and execution metrics from your actual code trace to infer Big-O complexity (O(1), O(n), O(n²), O(log n), etc.)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the Dry Run feature in JavaFlow?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Dry Run feature lets you execute your Java code step-by-step with AI-powered analysis. It traces every variable change, method call, and loop iteration, and can generate custom visual diagrams of your algorithm using Google Gemini AI."
+        }
+      }
+    ]
   }
   </script>
 
@@ -169,5 +251,40 @@
 <body class="bg-background text-on-background h-screen flex flex-col font-body-sm overflow-hidden antialiased">
   <div id="root" class="h-full flex flex-col"></div>
   <script type="module" src="/src/main.jsx"></script>
+
+  <!-- SEO: Crawlable fallback content for search engines that cannot execute JavaScript -->
+  <noscript>
+    <header>
+      <h1>JavaFlow — Free Java Memory Visualizer & DSA Algorithm Visualizer Online</h1>
+      <p>JavaFlow is a free, open-source interactive Java execution engine and Data Structures & Algorithms (DSA) visualizer built for students and developers.</p>
+    </header>
+    <main>
+      <section>
+        <h2>Java Memory Management Visualizer</h2>
+        <p>Trace your Java code execution step-by-step and see how the JVM allocates memory. Visualize the Call Stack, Heap, Method Area, Threads, and PC Register in real-time.</p>
+      </section>
+      <section>
+        <h2>DSA Algorithm Visualizer</h2>
+        <p>Understand Data Structures and Algorithms visually. See how arrays, linked lists, trees, and graphs are processed by your Java code. Analyze time complexity (Big-O notation) automatically.</p>
+      </section>
+      <section>
+        <h2>AI-Powered Dry Run</h2>
+        <p>Dry run your Java code with AI-powered step-by-step analysis. JavaFlow uses Google Gemini AI to generate custom visual diagrams of your algorithms, trace variable changes, and explain each step of execution.</p>
+      </section>
+      <section>
+        <h2>Why Use JavaFlow?</h2>
+        <ul>
+          <li>100% Free & Open Source (MIT License)</li>
+          <li>No installation required — runs entirely in your browser</li>
+          <li>Built-in time complexity analyzer (O(1), O(n), O(n²), O(log n))</li>
+          <li>AI-generated algorithm visualizations powered by Google Gemini</li>
+          <li>Real JVM execution tracing via Java Debug Interface (JDI)</li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>Created by Avinash Mourya & Abhinav Chaubey. <a href="https://github.com/abhinavkumar0811/javaflow-visualizer">View on GitHub</a></p>
+    </footer>
+  </noscript>
 </body>
 </html>

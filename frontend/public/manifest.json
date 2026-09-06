@@ -1,0 +1,33 @@
+{
+  "name": "JavaFlow",
+  "short_name": "JavaFlow",
+  "description": "Free, open-source Java memory management visualizer and DSA algorithm visualizer. Trace JVM execution step-by-step.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#111317",
+  "theme_color": "#111317",
+  "orientation": "landscape",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/logo_l.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/logo_l_seo.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "label": "JavaFlow — Java Memory & DSA Visualizer"
+    }
+  ],
+  "categories": ["education", "developer tools", "productivity"],
+  "lang": "en",
+  "dir": "ltr"
+}
