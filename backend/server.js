@@ -348,6 +348,29 @@ app.post('/api/ai-visualize/regenerate', dailyRegenLimiter, aiLimiter, async (re
   }
 });
 
+app.post('/api/admin/reset-limits', (req, res) => {
+  const { code } = req.body;
+  if (!process.env.ADMIN_SECRET_CODE) {
+    return res.status(500).json({ ok: false, message: 'ADMIN_SECRET_CODE not configured on server' });
+  }
+  if (code !== process.env.ADMIN_SECRET_CODE) {
+    return res.status(401).json({ ok: false, message: 'Invalid admin code' });
+  }
+
+  const key = req.ip || req.socket.remoteAddress || '127.0.0.1';
+  
+  try {
+    dailyAiLimiter.resetKey(key);
+    dailyRegenLimiter.resetKey(key);
+    aiLimiter.resetKey(key);
+    executionLimiter.resetKey(key);
+    globalLimiter.resetKey(key);
+    res.json({ ok: true, message: 'Rate limits successfully reset for your IP!' });
+  } catch (e) {
+    res.status(500).json({ ok: false, message: 'Failed to reset limit: ' + e.message });
+  }
+});
+
 app.get('/api/rate-limit-status', async (req, res) => {
   try {
     const key = req.ip || req.socket.remoteAddress || '127.0.0.1';
