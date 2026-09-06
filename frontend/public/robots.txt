@@ -1,4 +1,10 @@
 User-agent: *
 Allow: /
+Disallow: /admin/
 
+# Sitemaps
 Sitemap: https://javaflow.vercel.app/sitemap.xml
+
+# Crawl-delay hints (respected by Bing, Yandex)
+# Not needed for Google but good practice for other engines
+Host: https://javaflow.vercel.app
